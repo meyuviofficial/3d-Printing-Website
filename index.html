@@ -6,14 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>3D Printers</title>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
     <link rel="stylesheet" href="./CSS/style.css">
     <script src="./js/jsCode.js"></script>
-    
+
 </head>
 <!-- body section start -->
+// TODO to add modals to all the divs
+// TODO to add a contact form at the End`
 
 <body>
     <!-- background-image start  -->
@@ -191,23 +193,23 @@
         </div>
     </div>
     <!-- About Us - End  -->
-    <div id="test_1" class="ui modal">
+    <div id="AboutUsModal" class="ui modal">
         <i class="close icon"></i>
         <div class="header">
-            Profile Picture
+            About Us
         </div>
         <div class="image content">
-            <div class="ui medium image">
+            <div class="ui large fluid image">
                 <img src="./img/3D_printer_1.jpg">
             </div>
             <div class="description">
-                <div class="ui header">We've auto-chosen a profile image for you.</div>
-                <p>We've grabbed the following image from the <a href="https://www.gravatar.com"
-                        target="_blank">gravatar</a> image associated with your registered e-mail address.</p>
-                <p>Is it okay to use this photo?</p>
+                <div class="ui header">This div shows who we are and tells what we do!!!</div>
+                <p>
+                    if you are interested kindly contact us !!
+                </p>
             </div>
         </div>
-        <div class="actions">
+        <!-- <div class="actions">
             <div class="ui black deny button">
                 Nope
             </div>
@@ -215,7 +217,7 @@
                 Yep, that's me
                 <i class="checkmark icon"></i>
             </div>
-        </div>
+        </div> -->
     </div>
     <!-- Footer - Start  -->
     <div class="ui inverted padded footer segment">
@@ -245,15 +247,15 @@
             </div>
         </div>
         <!-- <div class="content"> -->
-            <div class="ui centered grid container">
-                <i class="copyright outline icon"></i>
-                Thangaraj 3D Printers. All Rights reserved.
-            </div>
-            <!-- </div> -->
+        <div class="ui centered grid container">
+            <i class="copyright outline icon"></i>
+            Thangaraj 3D Printers. All Rights reserved.
         </div>
-        <!-- footer - end  -->
-            
-    </body>
+        <!-- </div> -->
+    </div>
+    <!-- footer - end  -->
+
+</body>
 <!-- body section end -->
 
 </html>
