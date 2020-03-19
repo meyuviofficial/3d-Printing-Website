@@ -1,11 +1,5 @@
 $(document).ready(function () {
-
-    
-    $('.context.example .ui.sidebar')
-        .sidebar({
-            context: $('.context.example .bottom.segment')
-        })
-        .sidebar('attach events', '.context.example .menu .item')
-        ;
-    
+    $("#button_1").click(function () {
+        $('#test_1').modal('show');
+    });
 });

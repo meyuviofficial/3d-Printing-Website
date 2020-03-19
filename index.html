@@ -5,13 +5,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>3D Printers</title>
-    <link rel="stylesheet" href="Semantic-UI-CSS/semantic.css" />
-    <link rel="stylesheet" href="Semantic-UI-CSS/semantic.js" />
-    <link rel="stylesheet" href="Semantic-UI-CSS/semantic.min.css" />
-    <link rel="stylesheet" href="./CSS/style.css">
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <script src="./js/jsCode.js"></script>
+    
 </head>
 <!-- body section start -->
 
@@ -54,7 +54,7 @@
                                 <img src="img/3D_printer_2.jpg">
                             </div>
                             <div class="content">
-                                <a class="header">3D Printers</a>
+                                <a class="header" href="./views/Printers.html">3D Printers</a>
                                 <div class="description">
                                     Provides details about 3D printers.
                                 </div>
@@ -65,7 +65,7 @@
                                 <img src="img/3D_printer_4.jpg">
                             </div>
                             <div class="content">
-                                <a class="header">3D Printing Services</a>
+                                <a class="header" href="./views/Printing_Services.html">3D Printing Services</a>
                                 <div class="description">
                                     Provides details about 3D Printing Services.
                                 </div>
@@ -76,7 +76,7 @@
                                 <img src="img/3D_printer_3.jpg">
                             </div>
                             <div class="content">
-                                <a class="header">3D Printing Filaments</a>
+                                <a class="header" href="./views/filamens.html">3D Printing Filaments</a>
                                 <div class="description">
                                     Provides details about 3D Printing Filaments.
                                 </div>
@@ -182,7 +182,7 @@
                         id.
                     </p>
                     <div class="ui labelled icon buttons">
-                        <button class="ui large red button">
+                        <button id="button_1" class="ui large red button">
                             <i class="chevron circle right icon"></i>
                             More</button>
                     </div>
@@ -191,7 +191,32 @@
         </div>
     </div>
     <!-- About Us - End  -->
-
+    <div id="test_1" class="ui modal">
+        <i class="close icon"></i>
+        <div class="header">
+            Profile Picture
+        </div>
+        <div class="image content">
+            <div class="ui medium image">
+                <img src="./img/3D_printer_1.jpg">
+            </div>
+            <div class="description">
+                <div class="ui header">We've auto-chosen a profile image for you.</div>
+                <p>We've grabbed the following image from the <a href="https://www.gravatar.com"
+                        target="_blank">gravatar</a> image associated with your registered e-mail address.</p>
+                <p>Is it okay to use this photo?</p>
+            </div>
+        </div>
+        <div class="actions">
+            <div class="ui black deny button">
+                Nope
+            </div>
+            <div class="ui positive right labeled icon button">
+                Yep, that's me
+                <i class="checkmark icon"></i>
+            </div>
+        </div>
+    </div>
     <!-- Footer - Start  -->
     <div class="ui inverted padded footer segment">
         <h3 class="ui centered huge header"> Contact Us</h3>
@@ -220,14 +245,15 @@
             </div>
         </div>
         <!-- <div class="content"> -->
-        <div class="ui centered grid container">
-            <i class="copyright outline icon"></i>
-            Thangaraj 3D Printers. All Rights reserved.
+            <div class="ui centered grid container">
+                <i class="copyright outline icon"></i>
+                Thangaraj 3D Printers. All Rights reserved.
+            </div>
+            <!-- </div> -->
         </div>
-        <!-- </div> -->
-    </div>
-    <!-- footer - end  -->
-</body>
+        <!-- footer - end  -->
+            
+    </body>
 <!-- body section end -->
 
 </html>
