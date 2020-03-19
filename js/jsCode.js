@@ -1,5 +1,8 @@
 $(document).ready(function () {
-    $("#button_1").click(function () {
+    $("#AboutUsButton").click(function () {
         $('#AboutUsModal').modal('show');
+    });
+    $("#TrainingButton").click(function () {
+        $('#TrainingModal').modal('show');
     });
 });
