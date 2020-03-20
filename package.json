@@ -1,0 +1,29 @@
+{
+  "name": "3d-printing-website",
+  "version": "1.0.0",
+  "description": "This contains a 3d Printing Website",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yuvarajselva/3d-Printing-Website.git"
+  },
+  "keywords": [
+    "HTML5",
+    "CSS3",
+    "Jquery",
+    "Node.js",
+    "Express.js"
+  ],
+  "author": "Yuvaraj Selvarajan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yuvarajselva/3d-Printing-Website/issues"
+  },
+  "homepage": "https://github.com/yuvarajselva/3d-Printing-Website#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
