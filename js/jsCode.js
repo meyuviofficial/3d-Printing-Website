@@ -5,4 +5,8 @@ $(document).ready(function () {
     $("#TrainingButton").click(function () {
         $('#TrainingModal').modal('show');
     });
+    $("#NavBarDropDown").click(function()
+    {
+        $('.ui.dropdown').dropdown('toggle');
+    });
 });
