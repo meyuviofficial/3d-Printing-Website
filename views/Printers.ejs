@@ -17,7 +17,7 @@
     <body>
         <div class="ui basic segment">
             <div class="ui inverted fluid top fixed small five item menu">
-                <a class="red item active" href="../index.html">Home</a>
+                <a class="red item active" href="/">Home</a>
                 <a class="red item" href="#FDM">FDM (Plastic)</a>
                 <a class="red item" href="#SLA">SLA (Resins)</a>
                 <a class="red item" href="#3D_Pen">3D Pen</a>
@@ -27,9 +27,9 @@
         <div class="ui basic segment">
             <div class="ui basic left aligned segment">
                 <div class="ui large breadcrumb">
-                    <a class="section" href="../index.html">Home</a>
+                    <a class="section" href="/">Home</a>
                     <i class="right angle icon divider"></i>
-                    <a class="section" href="./Printers.html">3D Printers</a>
+                    <a class="section" href="/3D-Printers">3D Printers</a>
                 </div>
                 <div class="ui center aligned huge header">
                     3D Printers
@@ -213,39 +213,10 @@
             </div>
             
         </div>
-        <div class="ui inverted padded footer segment">
-            <h3 class="ui centered huge header"> Contact Us</h3>
-            <div class="ui centered stackable container grid">
-                <div class="ui basic padded stackable segment">
-                    <button class="ui large facebook button">
-                        <i class="facebook icon"></i>
-                        Facebook
-                    </button>
-                    <button class="ui large twitter button">
-                        <i class="twitter icon"></i>
-                        Twitter
-                    </button>
-                    <button class="ui large linkedin button">
-                        <i class="linkedin icon"></i>
-                        LinkedIn
-                    </button>
-                    <button class="ui large instagram button">
-                        <i class="instagram icon"></i>
-                        Instagram
-                    </button>
-                    <button class="ui large green button">
-                        <i class="whatsapp icon"></i>
-                        Whatsapp
-                    </button>
-                </div>
-            </div>
-            <!-- <div class="content"> -->
-            <div class="ui centered grid container">
-                <i class="copyright outline icon"></i>
-                Thangaraj 3D Printers. All Rights reserved.
-            </div>
-            <!-- </div> -->
-        </div>
+        <footer>
+            <%- include ('partials/footer'); -%>
+        </footer>
+
     </body>
 </body>
 
