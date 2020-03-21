@@ -18,5 +18,9 @@ const routes = express.Router();
         {
             res.render('login')
         });
+        routes.get('/signup',function(req,res)
+        {
+            res.render(signup);
+        });
 
 module.exports = routes;
