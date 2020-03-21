@@ -20,7 +20,7 @@ const routes = express.Router();
         });
         routes.get('/signup',function(req,res)
         {
-            res.render(signup);
+            res.render('signup');
         });
 
 module.exports = routes;
