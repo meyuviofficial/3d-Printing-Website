@@ -14,5 +14,9 @@ const routes = express.Router();
             res.render('filaments')
         })
         console.log("hey Yuvi !! I'm from indexx.js");
+        routes.get('/login',function(req,res)
+        {
+            res.render('login')
+        });
 
 module.exports = routes;
