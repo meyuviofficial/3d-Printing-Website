@@ -7,6 +7,7 @@ const dbConfig = require('./model/database') //including DB config file
 var passport = require('passport');
 var bodyParser = require('body-parser');
 
+require('./config/passport')(passport);
 
 app.use(passport.initialize());
 app.use(bodyParser());
