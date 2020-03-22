@@ -1,23 +1,14 @@
-//initializing for express
-const express = require('express')
+const express = require('express') //initializing for express
 const app = express()
-//initializing for path
-const path = require('path')
-//initializing for mongoDB
-const MongoClient = require('mongodb').MongoClient;
-// including routes config file
-const routes=require('./routes/index');
-//including DB config file
-const dbConfig = require('./model/database')
-
+const path = require('path') //initializing for path
+const MongoClient = require('mongodb').MongoClient; //initializing for mongoDB
+const routes = require('./routes/index'); // including routes config file
+const dbConfig = require('./model/database') //including DB config file
+var passport = require('passport');
+app.use(passport.initialize());
 app.use('/',routes);
-
-//setting the view engine 
-app.set('view engine', 'ejs');
+app.set('view engine', 'ejs'); //setting the view engine 
 app.set('views', path.join(__dirname, 'views'));
-//setting the static folder for js, CSS, img (static files)
-app.use('/static', express.static(path.join(__dirname, 'public')));
+app.use('/static', express.static(path.join(__dirname, 'public'))); //setting the static folder for js, CSS, img (static files)
 console.log("Hey Yuvi");
-//server listens at 3000
-app.listen(3000)
-
+app.listen(3000) //server listens at 3000
