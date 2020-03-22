@@ -22,5 +22,8 @@ const routes = express.Router();
         {
             res.render('signup');
         });
-
+        routes.post('/signup',function(req,res)
+        {
+            res.render('index');
+        });
 module.exports = routes;

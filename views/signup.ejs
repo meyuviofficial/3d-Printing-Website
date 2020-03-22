@@ -13,8 +13,41 @@
 </head>
 
 <body>
-    <p class="ui header">Sign Up Page working</p>
-
+<div class="ui attached message">
+    <div class="header">
+        Welcome to our site!
+    </div>
+    <p>Fill out the form below to send the message you want</p>
+</div>
+<form action="/signup" method="POST">
+    <div class="ui form attached fluid segment">
+        <div class="two fields">
+            <div class="required field">
+                <label>First name</label>
+                <input type="text" placeholder="First Name">
+            </div>
+            <div class="required field">
+                <label>Last name</label>
+                <input type="text" placeholder="Last Name">
+            </div>
+        </div>
+        <div class="two fields">
+            <div class="required field">
+                <label for="">Email Address</label>
+                <input type="email" name="" id="" placeholder="email">
+            </div>
+            <div class="required field">
+                <label for="">Phone Number</label>
+                <input type="number" placeholder="Phone No">
+            </div>
+        </div>
+        <div class="required field">
+            <label for="">Password</label>
+            <input type="password" placeholder="Your Password Goes here !!">
+        </div>
+        <button class="ui red button" type="submit">Submit</button>
+    </div>
+</form>
 </body>
 
 </html>
