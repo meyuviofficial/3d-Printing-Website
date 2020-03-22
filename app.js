@@ -5,7 +5,9 @@ const MongoClient = require('mongodb').MongoClient; //initializing for mongoDB
 const dbConfig = require('./model/database') //including DB config file
 var passport = require('passport');
 var bodyParser = require('body-parser');
+var mongoose = require('mongoose');
 
+mongoose.connect(dbConfig.ConnectionString);    //db connection
 require('./config/passport')(passport);
 
 app.use(passport.initialize());
