@@ -6,6 +6,8 @@ const dbConfig = require('./model/database') //including DB config file
 var passport = require('passport');
 var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
+var cookieParser = require('cookie-parser');
+var session = require('express-session');
 
 mongoose.connect(dbConfig.ConnectionString);    //db connection
 require('./config/passport')(passport);
