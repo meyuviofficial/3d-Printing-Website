@@ -14,6 +14,9 @@ require('./config/passport')(passport);
 
 app.use(passport.initialize());
 app.use(bodyParser());
+app.use(cookieParser());
+app.use(passport.session());
+app.use(session({secret: 'ExpectationKills'}));
 // app.use('/',routes);
 app.set('view engine', 'ejs'); //setting the view engine 
 app.set('views', path.join(__dirname, 'views'));
