@@ -5,7 +5,11 @@ const MongoClient = require('mongodb').MongoClient; //initializing for mongoDB
 const routes = require('./routes/index'); // including routes config file
 const dbConfig = require('./model/database') //including DB config file
 var passport = require('passport');
+var bodyParser = require('body-parser');
+
+
 app.use(passport.initialize());
+app.use(bodyParser());
 app.use('/',routes);
 app.set('view engine', 'ejs'); //setting the view engine 
 app.set('views', path.join(__dirname, 'views'));
