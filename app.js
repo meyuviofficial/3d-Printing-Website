@@ -3,15 +3,16 @@ const app = express()
 const path = require('path') //initializing for path
 const MongoClient = require('mongodb').MongoClient; //initializing for mongoDB
 const dbConfig = require('./model/database') //including DB config file
-var passport = require('passport');
-var bodyParser = require('body-parser');
-var mongoose = require('mongoose');
-var cookieParser = require('cookie-parser');
-var session = require('express-session');
+const passport = require('passport');
+const bodyParser = require('body-parser');
+const mongoose = require('mongoose');
+const cookieParser = require('cookie-parser');
+const session = require('express-session');
 
 mongoose.connect(dbConfig.ConnectionString);    //db connection
-require('./config/passport')(passport);
 
+app.use(express.json());
+app.use(express.urlencoded({ extended: false }));
 app.use(passport.initialize());
 app.use(bodyParser());
 app.use(cookieParser());

@@ -1,3 +1,4 @@
+var model = require('../model/user');
 module.exports = function(app,passport)
 {
 
@@ -22,14 +23,37 @@ module.exports = function(app,passport)
     {
         res.render('signup');
     });
-    app.post('/signup', passport.authenticate('local-signup', {
+    app.post('/signup',function(req,res)
+    {
+        let userinfo = new model (
+            {
+                FirstName : req.body.FirstName,
+                LastName : req.body.LastName,
+                Email : req.body.Email,
+                Password : req.body.Password,
+                PhoneNo : req.body.PhoneNo
+            }
+            
+            );
+            
+            userinfo.save(function (err)
+            {
+                if(err)
+                {
+                    return next(err);
+                }
+                res.send (req.body);
+            });
+            // res.send(req.body);
+    });
+    // app.post('/signup', passport.authenticate('local-signup', {
         
         
         
-        successRedirect: '/profile', // redirect to the secure profile section
-        failureRedirect: '/signup', // redirect back to the signup page if there is an error
-        // failureFlash: true // allow flash messages
-    })); 
+    //     successRedirect: '/profile', // redirect to the secure profile section
+    //     failureRedirect: '/signup', // redirect back to the signup page if there is an error
+    //     // failureFlash: true // allow flash messages
+    // })); 
     app.get('/profile',function(req,res)
     {
         res.send("Success signup");
