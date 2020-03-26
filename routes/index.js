@@ -25,7 +25,7 @@ module.exports = function(app,passport)
     });
     app.post('/signup',function(req,res)
     {
-        let userinfo = new User (
+        let userinfo = new model (
             {
                 FirstName : req.body.FirstName,
                 LastName : req.body.LastName,
